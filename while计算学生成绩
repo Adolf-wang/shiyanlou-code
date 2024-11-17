@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main() {
+    double score,sum;
+    sum =0.0;
+    printf("请输入一批0~100的成绩，输入负数表示输入结束:\n");
+    scanf("%lf",&score);
+    while(score>=0) {
+
+        sum += score;
+        scanf("%lf",&score);
+    }
+    printf("%.2f",sum);
+    return 0;
+}
