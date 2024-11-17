@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main() {
+    int n,sum,fact;
+    fact = 1;
+    printf("请输入数目:\n");
+    scanf("%d",&n);
+    if(n>20) {
+        printf("无法计算");
+    }else if(n<=20) {
+        for(int i=1;i<=n;i++) {
+
+
+            fact = fact*i;
+            sum =sum+fact;
+        }
+    }
+    printf("%d",sum);
+    return 0;
+}
