@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(void) {
+    int n,digits;
+    printf("请输入数字n:\n");
+    scanf("%d",&n);
+    digits = 0;
+    do {
+        n/=10;
+        digits++;
+    }while(n != 0);
+    printf("%d",digits);
+    return 0;
+}
