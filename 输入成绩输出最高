@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(void) {
+    int n,max;
+    max=0;
+    printf("请输入一批学生的成绩，直到输入负数结束:\n");
+    while(n>=0) {
+        scanf("%d",&n);
+        if(n>max) {
+            max = n;
+        }
+
+    }
+    printf("%d",max);
+    return 0;
+}
